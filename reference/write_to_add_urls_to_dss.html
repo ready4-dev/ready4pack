@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ready4 s3 class Manifest for packages containing datasets. — ready4pack_manifest • ready4pack</title>
+<title>Write to add urls to datasets — write_to_add_urls_to_dss • ready4pack</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,8 @@
 
 
 
-<meta property="og:title" content="ready4 s3 class Manifest for packages containing datasets. — ready4pack_manifest" />
-<meta property="og:description" content="Create a new valid instance of the ready4 s3 class Manifest for packages containing datasets." />
+<meta property="og:title" content="Write to add urls to datasets — write_to_add_urls_to_dss" />
+<meta property="og:description" content="write_to_add_urls_to_dss() is a Write function that writes a file to a specified local directory. Specifically, this function implements an algorithm to write to add urls to datasets. The function returns Package datasets (a tibble)." />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -119,32 +119,51 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>ready4 s3 class Manifest for packages containing datasets.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/ready4-dev/ready4pack/blob/master/R/C3_ready4pack_manifest.R'><code>R/C3_ready4pack_manifest.R</code></a></small>
-    <div class="hidden name"><code>ready4pack_manifest.Rd</code></div>
+    <h1>Write to add urls to datasets</h1>
+    <small class="dont-index">Source: <a href='https://github.com/ready4-dev/ready4pack/blob/master/R/fn_write.R'><code>R/fn_write.R</code></a></small>
+    <div class="hidden name"><code>write_to_add_urls_to_dss.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Create a new valid instance of the ready4 s3 class Manifest for packages containing datasets.</p>
+    <p>write_to_add_urls_to_dss() is a Write function that writes a file to a specified local directory. Specifically, this function implements an algorithm to write to add urls to datasets. The function returns Package datasets (a tibble).</p>
     </div>
 
-    <pre class="usage"><span class='fu'>ready4pack_manifest</span><span class='op'>(</span>x <span class='op'>=</span> <span class='fu'><a href='make_pt_ready4pack_manifest.html'>make_pt_ready4pack_manifest</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>write_to_add_urls_to_dss</span><span class='op'>(</span>
+  <span class='va'>ds_url_1L_chr</span>,
+  <span class='va'>abbreviations_lup</span>,
+  <span class='va'>pkg_dss_tb</span>,
+  pkg_nm_1L_chr <span class='op'>=</span> <span class='fu'>ready4fun</span><span class='fu'>::</span><span class='fu'><a href='https://ready4-dev.github.io/ready4fun/reference/get_dev_pkg_nm.html'>get_dev_pkg_nm</a></span><span class='op'>(</span><span class='op'>)</span>,
+  <span class='va'>object_type_lup</span>
+<span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>x</th>
-      <td><p>A prototype for the ready4 s3 class Manifest for packages containing datasets., Default: make_pt_ready4pack_manifest()</p></td>
+      <th>ds_url_1L_chr</th>
+      <td><p>Dataset url (a character vector of length one)</p></td>
+    </tr>
+    <tr>
+      <th>abbreviations_lup</th>
+      <td><p>Abbreviations (a lookup table)</p></td>
+    </tr>
+    <tr>
+      <th>pkg_dss_tb</th>
+      <td><p>Package datasets (a tibble)</p></td>
+    </tr>
+    <tr>
+      <th>pkg_nm_1L_chr</th>
+      <td><p>Package name (a character vector of length one), Default: ready4fun::get_dev_pkg_nm()</p></td>
+    </tr>
+    <tr>
+      <th>object_type_lup</th>
+      <td><p>Object type (a lookup table)</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A validated instance of the ready4 s3 class Manifest for packages containing datasets.</p>
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
-
-    <p>ready4 s3 class Manifest for packages containing datasets.</p>
+    <p>Package datasets (a tibble)</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
