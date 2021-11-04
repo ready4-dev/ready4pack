@@ -1,0 +1,14 @@
+^ready4pack\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^LICENSE\.md$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^data-raw/DATASET\.R$
+^data-raw/mthds/author\.R$
+^data-raw/mthds/authorData\.R$
+^data-raw/mthds/metamorphose\.R$
+^\.github$
+^data-raw/fns/assert\.R$
+^initial_setup\.R$

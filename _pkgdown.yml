@@ -1,0 +1,19 @@
+home:
+  links:
+  - text: Manual - User (PDF)
+    href: https://github.com/ready4-dev/ready4pack/releases/download/Documentation_0.0/ready4pack_User.pdf
+  - text: Manual - Developer (PDF)
+    href: https://github.com/ready4-dev/ready4pack/releases/download/Documentation_0.0/ready4pack_Developer.pdf
+  - text: Project website
+    href:  https://ready4-dev.github.io/ready4/
+development:
+  mode: auto
+reference:
+- title: "S3 Classes"
+- contents:
+  - ready4pack_manifest
+- title: "Methods"
+- contents:
+  - author.ready4pack_manifest
+  - authorData.ready4pack_manifest
+  - metamorphose.ready4pack_manifest
