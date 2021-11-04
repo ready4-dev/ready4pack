@@ -4,15 +4,15 @@
 \name{ready4pack-package}
 \alias{ready4pack}
 \alias{ready4pack-package}
-\title{ready4pack: Author R Packages Supporting Open and Modular Mental Health Simulations}
+\title{ready4pack: Author R Packages that Extend the Ready4 Framework for Open and Modular Mental Health Systems Models}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-ready4pack provides a set of tools for authoring R packages of functions, classes and datasets that implement open source, modular mental health simulation models. This development version of the ready4use package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
+ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open source, modular mental health systems models. This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
 
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-ready4pack provides a set of tools for authoring R packages of functions, classes and datasets that implement open source, modular mental health simulation models. This development version of the ready4use package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
+ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open source, modular mental health systems models. This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
 }
 \seealso{
 Useful links:
