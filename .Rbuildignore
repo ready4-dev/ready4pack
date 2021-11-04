@@ -12,3 +12,4 @@
 ^\.github$
 ^data-raw/fns/assert\.R$
 ^initial_setup\.R$
+^data-raw/fns/write\.R$

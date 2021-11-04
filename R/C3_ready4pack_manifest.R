@@ -32,8 +32,9 @@ x
 #' @details ready4 s3 class Manifest for packages containing datasets.
 #' @rdname make_pt_ready4pack_manifest
 #' @export 
-#' @importFrom ready4fun ready4fun_manifest update_pt_fn_args_ls
+#' @importFrom ready4fun ready4fun_manifest
 #' @importFrom ready4class ready4class_constructor
+#' @importFrom ready4 update_pt_fn_args_ls
 #' @importFrom rlang exec
 make_pt_ready4pack_manifest <- function(x_ready4fun_manifest = ready4fun::ready4fun_manifest(),
 constructor_r3 = ready4class::ready4class_constructor(),
@@ -42,7 +43,7 @@ clss_to_apply_ls = list()){
 args_ls <- list(x_ready4fun_manifest = x_ready4fun_manifest,
 constructor_r3 = constructor_r3,
 pkg_ds_ls_ls = pkg_ds_ls_ls,
-clss_to_apply_ls = clss_to_apply_ls) %>% ready4fun::update_pt_fn_args_ls()
+clss_to_apply_ls = clss_to_apply_ls) %>% ready4::update_pt_fn_args_ls()
 rlang::exec(list,!!!args_ls)
 }
 #' Validate ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
