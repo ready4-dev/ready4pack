@@ -1,7 +1,7 @@
 Package: ready4pack
 Title: Author R Packages Supporting Open and Modular Mental Health
     Simulations
-Version: 0.0.0.9001
+Version: 0.0.0.9002
 Authors@R: c(
     person("Matthew", "Hamilton", , "matthew.hamilton@orygen.org.au", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7407-9194")),
@@ -26,20 +26,21 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
+    dataverse,
     dplyr,
     knitr,
     lifecycle,
     magrittr,
     methods,
     purrr,
-    ready4class (>= 0.0.0.9252),
-    ready4fun (>= 0.0.0.9466),
+    ready4class (>= 0.0.0.9253),
+    ready4fun (>= 0.0.0.9467),
     rlang,
     stringr,
-    testit,
     testthat,
     tibble,
-    tidyr
+    tidyr,
+    utils
 VignetteBuilder: knitr
 Depends: 
     ready4
