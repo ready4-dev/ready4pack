@@ -1,6 +1,7 @@
 authorData.ready4pack_manifest <- function(x){
-  if(!is.null(x$clss_to_apply_ls)){
-    ds_nms_chr <- x$pkg_ds_ls_ls %>% purrr::map_chr(~ .x$db_1L_chr)
+  if(!is.null(x$clss_to_apply_ls) & !identical(x$clss_to_apply_ls,list(NULL))){
+    ds_nms_chr <- x$pkg_ds_ls_ls %>%
+      purrr::map_chr(~ .x$db_1L_chr)
     x$clss_to_apply_ls %>% purrr::walk2(names(x$clss_to_apply_ls),
                                         ~ {
                                           fun_fn <- eval(parse(text=.y))
