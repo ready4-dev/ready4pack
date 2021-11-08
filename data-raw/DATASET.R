@@ -1,4 +1,4 @@
-library(ready4)
+library(ready4class)
 ready4fun::write_fn_type_dirs()
 pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages That Extend The Ready4 Framework for Open and Modular Mental Health Systems Models" %>% tools::toTitleCase(),
                                            pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open source, modular mental health systems models.
