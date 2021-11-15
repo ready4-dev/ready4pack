@@ -3,7 +3,7 @@
 \name{authorData.ready4pack_manifest}
 \alias{authorData.ready4pack_manifest}
 \alias{authorData,ready4pack_manifest-method}
-\title{AuthorData - a method that authors and saves files necessary for creating and documenting datasets.}
+\title{authorData - a method that authors and saves files necessary for creating and documenting datasets}
 \usage{
 authorData.ready4pack_manifest(x)
 
@@ -13,5 +13,5 @@ authorData.ready4pack_manifest(x)
 \item{x}{An instance of ready4 s3 class Manifest for packages containing datasets.}
 }
 \description{
-authorData.ready4pack_manifest() is an AuthorData method that authors and saves files necessary for creating and documenting datasets. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
+authorData.ready4pack_manifest() is an authorData method that authors and saves files necessary for creating and documenting datasets. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
 }

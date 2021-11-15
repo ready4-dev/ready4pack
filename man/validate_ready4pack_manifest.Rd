@@ -2,7 +2,7 @@
 % Please edit documentation in R/C3_ready4pack_manifest.R
 \name{validate_ready4pack_manifest}
 \alias{validate_ready4pack_manifest}
-\title{Validate ready4pack manifest ready4 s3 class Manifest for packages containing datasets.}
+\title{validate ready4pack manifest ready4 s3 class Manifest for packages containing datasets.}
 \usage{
 validate_ready4pack_manifest(x)
 }

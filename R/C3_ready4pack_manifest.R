@@ -9,7 +9,7 @@
 ready4pack_manifest <- function(x = make_pt_ready4pack_manifest()){ 
 validate_ready4pack_manifest(make_new_ready4pack_manifest(x))
 }
-#' Make new ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
+#' make new ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
 #' @description Create a new unvalidated instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x A prototype for the ready4 s3 class Manifest for packages containing datasets.
 #' @return An unvalidated instance of the ready4 s3 class Manifest for packages containing datasets.
@@ -22,7 +22,7 @@ class(x) <- append(c("ready4pack_manifest",setdiff(make_pt_ready4pack_manifest()
 class(x))
 x
 }
-#' Make prototype ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
+#' make prototype ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
 #' @description Create a new prototype for the ready4 s3 class Manifest for packages containing datasets.
 #' @param x_ready4fun_manifest PARAM_DESCRIPTION, Default: ready4fun::ready4fun_manifest()
 #' @param constructor_r3 Constructor (a ready4 S3), Default: ready4class::ready4class_constructor()
@@ -46,7 +46,7 @@ pkg_ds_ls_ls = pkg_ds_ls_ls,
 clss_to_apply_ls = clss_to_apply_ls) %>% ready4::update_pt_fn_args_ls()
 rlang::exec(list,!!!args_ls)
 }
-#' Validate ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
+#' validate ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
 #' @description Validate an instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x An unvalidated instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @return A prototpe for ready4 s3 class Manifest for packages containing datasets.
@@ -96,7 +96,7 @@ call. = FALSE)
 }
 
 x}
-#' Is ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
+#' is ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
 #' @description Check whether an object is a valid instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x An object of any type
 #' @return A logical value, TRUE if a valid instance of the ready4 s3 class Manifest for packages containing datasets.

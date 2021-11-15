@@ -3,7 +3,7 @@
 \name{metamorphose.ready4pack_manifest}
 \alias{metamorphose.ready4pack_manifest}
 \alias{metamorphose,ready4pack_manifest-method}
-\title{Metamorphose - a method that transforms an instance of a class into an object with different structural properties.}
+\title{metamorphose - a method that metamorphoses an instance of a class into an instance of a different (non-child) class}
 \usage{
 metamorphose.ready4pack_manifest(x)
 
@@ -16,5 +16,5 @@ metamorphose.ready4pack_manifest(x)
 Manifest (a ready4 S3)
 }
 \description{
-metamorphose.ready4pack_manifest() is a Metamorphose method that transforms an instance of a class into an object with different structural properties. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 S3).
+metamorphose.ready4pack_manifest() is a metamorphose method that metamorphoses an instance of a class into an instance of a different (non-child) class. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 S3).
 }

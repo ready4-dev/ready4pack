@@ -1,5 +1,5 @@
-#' AuthorData - a method that authors and saves files necessary for creating and documenting datasets.
-#' @description authorData.ready4pack_manifest() is an AuthorData method that authors and saves files necessary for creating and documenting datasets. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
+#' authorData - a method that authors and saves files necessary for creating and documenting datasets
+#' @description authorData.ready4pack_manifest() is an authorData method that authors and saves files necessary for creating and documenting datasets. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
 #' @param x An instance of ready4 s3 class Manifest for packages containing datasets.
 #' @return NULL
 #' @rdname authorData-methods

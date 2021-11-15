@@ -2,7 +2,7 @@
 % Please edit documentation in R/fn_write.R
 \name{write_to_add_urls_to_dss}
 \alias{write_to_add_urls_to_dss}
-\title{Write to add urls to datasets}
+\title{write to add urls to datasets}
 \usage{
 write_to_add_urls_to_dss(
   ds_url_1L_chr,

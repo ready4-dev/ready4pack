@@ -2,7 +2,7 @@
 % Please edit documentation in R/C3_ready4pack_manifest.R
 \name{is_ready4pack_manifest}
 \alias{is_ready4pack_manifest}
-\title{Is ready4pack manifest ready4 s3 class Manifest for packages containing datasets.}
+\title{is ready4pack manifest ready4 s3 class Manifest for packages containing datasets.}
 \usage{
 is_ready4pack_manifest(x)
 }

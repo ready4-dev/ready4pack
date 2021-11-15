@@ -1,4 +1,4 @@
-#' Write package datasets to dataverse dataset comma separated variables files
+#' write package datasets to dataverse dataset comma separated variables files
 #' @description write_pkg_dss_to_dv_ds_csvs() is a Write function that writes a file to a specified local directory. Specifically, this function implements an algorithm to write package datasets to dataverse dataset comma separated variables files. The function returns Dataset (a list).
 #' @param pkg_dss_tb Package datasets (a tibble)
 #' @param dv_nm_1L_chr Dataverse name (a character vector of length one)
@@ -37,7 +37,7 @@ write_pkg_dss_to_dv_ds_csvs <- function (pkg_dss_tb, dv_nm_1L_chr, ds_url_1L_chr
         key_1L_chr = key_1L_chr, server_1L_chr = server_1L_chr)
     return(ds_ls)
 }
-#' Write to add urls to datasets
+#' write to add urls to datasets
 #' @description write_to_add_urls_to_dss() is a Write function that writes a file to a specified local directory. Specifically, this function implements an algorithm to write to add urls to datasets. The function returns Package datasets (a tibble).
 #' @param ds_url_1L_chr Dataset url (a character vector of length one)
 #' @param abbreviations_lup Abbreviations (a lookup table)

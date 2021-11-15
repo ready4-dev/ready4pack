@@ -3,7 +3,7 @@
 \name{author.ready4pack_manifest}
 \alias{author.ready4pack_manifest}
 \alias{author,ready4pack_manifest-method}
-\title{Author - a method that writes files to local or remote locations.}
+\title{author - a method that authors and saves files to local or remote locations}
 \usage{
 author.ready4pack_manifest(x)
 
@@ -16,5 +16,5 @@ author.ready4pack_manifest(x)
 x (An object)
 }
 \description{
-author.ready4pack_manifest() is an Author method that writes files to local or remote locations. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
+author.ready4pack_manifest() is an author method that authors and saves files to local or remote locations. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
 }
