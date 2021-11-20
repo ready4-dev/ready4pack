@@ -1,4 +1,4 @@
-#' author - a method that authors and saves files to local or remote locations
+#' Author - a method that authors and saves files to local or remote locations
 #' @description author.ready4pack_manifest() is an author method that authors and saves files to local or remote locations. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.
 #' @param x An instance of ready4 s3 class Manifest for packages containing datasets.
 #' @return x (An object)

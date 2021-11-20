@@ -2,7 +2,7 @@
 % Please edit documentation in R/fn_write.R
 \name{write_pkg_dss_to_dv_ds_csvs}
 \alias{write_pkg_dss_to_dv_ds_csvs}
-\title{write package datasets to dataverse dataset comma separated variables files}
+\title{Write package datasets to dataverse dataset comma separated variables files}
 \usage{
 write_pkg_dss_to_dv_ds_csvs(
   pkg_dss_tb,

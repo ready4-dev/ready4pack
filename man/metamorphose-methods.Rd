@@ -3,7 +3,7 @@
 \name{metamorphose.ready4pack_manifest}
 \alias{metamorphose.ready4pack_manifest}
 \alias{metamorphose,ready4pack_manifest-method}
-\title{metamorphose - a method that metamorphoses an instance of a class into an instance of a different (non-child) class}
+\title{Metamorphose - a method that metamorphoses an instance of a class into an instance of a different (non-child) class}
 \usage{
 metamorphose.ready4pack_manifest(x)
 

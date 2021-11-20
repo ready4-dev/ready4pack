@@ -1,4 +1,4 @@
-#' metamorphose - a method that metamorphoses an instance of a class into an instance of a different (non-child) class
+#' Metamorphose - a method that metamorphoses an instance of a class into an instance of a different (non-child) class
 #' @description metamorphose.ready4pack_manifest() is a metamorphose method that metamorphoses an instance of a class into an instance of a different (non-child) class. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 S3).
 #' @param x An instance of ready4 s3 class Manifest for packages containing datasets.
 #' @return Manifest (a ready4 S3)
