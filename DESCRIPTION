@@ -1,7 +1,7 @@
 Package: ready4pack
 Title: Author R Packages that Extend the Ready4 Framework for Open and
     Modular Mental Health Systems Models
-Version: 0.0.0.9025
+Version: 0.0.0.9026
 Authors@R: c(
     person("Matthew", "Hamilton", , "matthew.hamilton@orygen.org.au", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7407-9194")),
@@ -33,8 +33,8 @@ Imports:
     magrittr,
     methods,
     purrr,
-    ready4class (>= 0.0.0.9270),
-    ready4fun (>= 0.0.0.9482),
+    ready4class (>= 0.0.0.9287),
+    ready4fun (>= 0.0.0.9497),
     rlang,
     stringr,
     testthat,
