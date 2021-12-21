@@ -17,4 +17,9 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(ready4pack)
 ```
-This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Currently there are no vignettes available.
+This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. 
+
+A brief overview of the intended use of `ready4pack` classes and methods is available at:
+
+
+- [Author R Packages That Extend The Ready4 Framework](V_01.html)

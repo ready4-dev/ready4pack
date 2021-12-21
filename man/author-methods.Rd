@@ -3,7 +3,7 @@
 \name{author.ready4pack_manifest}
 \alias{author.ready4pack_manifest}
 \alias{author,ready4pack_manifest-method}
-\title{Author - a method that authors and saves files to local or remote locations}
+\title{Author and save files}
 \usage{
 author.ready4pack_manifest(x)
 

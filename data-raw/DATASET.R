@@ -16,7 +16,7 @@ pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages
                                            urls_chr = c("https://ready4-dev.github.io/ready4pack/",
                                                         "https://github.com/ready4-dev/ready4pack",
                                                         "https://ready4-dev.github.io/ready4/"))
-manifest_r3 <- pkg_desc_ls %>%
+x <- pkg_desc_ls %>%
   ready4fun::make_manifest(addl_pkgs_ls = ready4fun::make_addl_pkgs_ls(depends_chr = "ready4",suggests_chr = "rmarkdown"),
                            build_ignore_ls = ready4fun::make_build_ignore_ls(file_nms_chr = c("initial_setup.R")),
                            check_type_1L_chr = "ready4",
@@ -28,17 +28,18 @@ manifest_r3 <- pkg_desc_ls %>%
                            piggyback_to_1L_chr = "ready4-dev/ready4",
                            ready4_type_1L_chr = "authoring",
                            zenodo_badge_1L_chr = "[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5644322.svg)](https://doi.org/10.5281/zenodo.5644322)")
-constructor_r3 <- ready4class::make_pt_ready4class_constructor(make_s3_lgl = T,
-                                               name_stub_chr = "manifest",
-                                               pt_ls = list(list("list")),
-                                               pt_chkr_pfx_ls = list(list("is.")),
-                                               pt_ns_ls = list(list("base")),
-                                               vals_ls = list(list(x_ready4fun_manifest = "ready4fun::ready4fun_manifest()",
-                                                                   constructor_r3 = "ready4class::ready4class_constructor()",
-                                                                   pkg_ds_ls_ls = "list()",
-                                                                   clss_to_apply_ls = "list()")),
-                                               class_desc_chr = "ready4 s3 class Manifest for packages containing datasets.") %>%
+y <- ready4class::make_pt_ready4class_constructor(make_s3_lgl = T,
+                                                  name_stub_chr = "manifest",
+                                                  pt_ls = list(list("list")),
+                                                  pt_chkr_pfx_ls = list(list("is.")),
+                                                  pt_ns_ls = list(list("base")),
+                                                  vals_ls = list(list(x_ready4fun_manifest = "ready4fun::ready4fun_manifest()",
+                                                                      constructor_r3 = "ready4class::ready4class_constructor()",
+                                                                      pkg_ds_ls_ls = "list()",
+                                                                      clss_to_apply_ls = "list()")),
+                                                  class_desc_chr = "ready4 s3 class Manifest for packages containing datasets.") %>%
   ready4class::ready4class_constructor()
-x_ready4class_manifest <- ready4class::ready4class_manifest(ready4class::make_pt_ready4class_manifest(manifest_r3, # Convert to metamorphose method on constructor class
-                                                                                                      constructor_r3 = constructor_r3)) # then add methods to ready4class_manifest class
-x_ready4fun_manifest <- author(x_ready4class_manifest)
+z <- ready4class::ready4class_manifest(ready4class::make_pt_ready4class_manifest(x, # Convert to metamorphose method on constructor class
+                                                                                 constructor_r3 = y)) # then add methods to ready4class_manifest class
+x <- author(z)
+devtools::build_vignettes()

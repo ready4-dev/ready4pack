@@ -18,3 +18,4 @@ Create a new unvalidated instance of the ready4 s3 class Manifest for packages c
 \details{
 ready4 s3 class Manifest for packages containing datasets.
 }
+\keyword{internal}

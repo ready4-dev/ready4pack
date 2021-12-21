@@ -1,0 +1,64 @@
+---
+title: "Author R Packages That Extend The Ready4 Framework"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+  pdf_document:
+    highlight: null
+    number_sections: yes
+vignette: >
+  %\VignetteIndexEntry{Author R Packages That Extend The Ready4 Framework}
+  %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
+---
+```{r echo = F}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r results='hide', message=FALSE}
+library(ready4pack)
+```
+
+`ready4pack` is a toolkit for implementing a highly standardised workflow to author R packages that extend the [ready4 framework](https://www.ready4-dev.com/) for open and modular mental health systems models.
+
+`ready4pack` builds on two related toolkits for extending the ready4 framework:
+
+- [ready4fun tools for authoring R package functions](https://ready4-dev.github.io/ready4fun/articles/V_01.html); and 
+- [ready4class tools for authoring classes and methods](https://ready4-dev.github.io/ready4class/articles/V_01.html)
+
+`ready4pack` integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets. A combination of the `ready4_pack_manifest` class and `author` method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the [ready4 github repository](https://github.com/ready4-dev).
+
+## Workflow example one
+
+[The program to author and document the ready4show package](https://github.com/ready4-dev/ready4show/blob/main/data-raw/DATASET.R) is relatively simple and authors:
+
+- the `ready4show` package [CITATION](https://github.com/ready4-dev/ready4show/blob/main/inst/CITATION), [DESCRIPTION](https://github.com/ready4-dev/ready4show/blob/main/DESCRIPTION), [LICENSE](https://github.com/ready4-dev/ready4show/blob/main/LICENSE) and [README](https://github.com/ready4-dev/ready4show/blob/main/README.md) files;
+
+- [all files in the `ready4show` package R directory](https://github.com/ready4-dev/ready4show/tree/main/R);
+
+- the `ready4show` package [website](https://ready4-dev.github.io/ready4show/);
+
+- two versions of the `ready4show` package manual - [a slimmed down version for end-users](https://github.com/ready4-dev/ready4show/releases/download/Documentation_0.0/ready4show_User.pdf) and [a more detailed inventory of contents intended for developers](https://github.com/ready4-dev/ready4show/releases/download/Documentation_0.0/ready4show_Developer.pdf);
+
+- an [initial `ready4show` release](https://github.com/ready4-dev/ready4show/releases/tag/Documentation_0.0) for hosting supporting files, the creation of which will trigger archiving on [Zenodo with a `ready4show`  package DOI](https://doi.org/10.5281/zenodo.5644569); and
+
+- an [R-CMD-check continuous integration](https://github.com/ready4-dev/ready4show/actions/workflows/R-CMD-check.yaml) algorithm to be implemented each time a new version of `ready4show` is pushed to the `main` branch of the GitHub source code repository.
+
+## Workflow example two
+
+[The program to author and document the youthvars package](https://github.com/ready4-dev/youthvars/blob/main/data-raw/DATASET.R) is a bit more complex as it includes syntax to create package datasets. In addition to the package datasets, the algorithm creates content corresponding to the previous example, specifically:
+
+- the `youthvars` package [CITATION](https://github.com/ready4-dev/youthvars/blob/main/inst/CITATION), [DESCRIPTION](https://github.com/ready4-dev/youthvars/blob/main/DESCRIPTION), [LICENSE](https://github.com/ready4-dev/youthvars/blob/main/LICENSE) and [README](https://github.com/ready4-dev/youthvars/blob/main/README.md) files;
+
+- [all files in the `youthvars` package R directory](https://github.com/ready4-dev/youthvars/tree/main/R);
+
+- the `youthvars` package [website](https://ready4-dev.github.io/youthvars/);
+
+- two versions of the `youthvars` package manual - [a slimmed down version for end-users](https://github.com/ready4-dev/youthvars/releases/download/Documentation_0.0/youthvars_User.pdf) and [a more detailed inventory of contents intended for developers](https://github.com/ready4-dev/youthvars/releases/download/Documentation_0.0/youthvars_Developer.pdf);
+
+- an [initial `youthvars` release](https://github.com/ready4-dev/youthvars/releases/tag/Documentation_0.0) for hosting supporting files, the creation of which will trigger archiving on [Zenodo with a `youthvars` package DOI](https://zenodo.org/record/5646551); and
+
+- an [R-CMD-check continuous integration](https://github.com/ready4-dev/youthvars/actions/workflows/R-CMD-check.yaml) algorithm to be implemented each time a new version of `youthvars` is pushed to the `main` branch of the GitHub source code repository.
+
+## Future documentation
+
+A more detailed guide to using `ready4pack` will be created in 2022.

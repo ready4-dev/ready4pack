@@ -2,15 +2,38 @@
 % Please edit documentation in R/C3_ready4pack_manifest.R
 \name{ready4pack_manifest}
 \alias{ready4pack_manifest}
+\alias{make_pt_ready4pack_manifest}
+\alias{is_ready4pack_manifest}
 \title{ready4 s3 class Manifest for packages containing datasets.}
 \usage{
 ready4pack_manifest(x = make_pt_ready4pack_manifest())
+
+make_pt_ready4pack_manifest(
+  x_ready4fun_manifest = ready4fun::ready4fun_manifest(),
+  constructor_r3 = ready4class::ready4class_constructor(),
+  pkg_ds_ls_ls = list(),
+  clss_to_apply_ls = list()
+)
+
+is_ready4pack_manifest(x)
 }
 \arguments{
-\item{x}{A prototype for the ready4 s3 class Manifest for packages containing datasets., Default: make_pt_ready4pack_manifest()}
+\item{x}{An object of any type}
+
+\item{x_ready4fun_manifest}{PARAM_DESCRIPTION, Default: ready4fun::ready4fun_manifest()}
+
+\item{constructor_r3}{Constructor (a ready4 S3), Default: ready4class::ready4class_constructor()}
+
+\item{pkg_ds_ls_ls}{Package dataset (a list of lists), Default: list()}
+
+\item{clss_to_apply_ls}{Classes to apply (a list), Default: list()}
 }
 \value{
 A validated instance of the ready4 s3 class Manifest for packages containing datasets.
+
+A prototype for ready4 s3 class Manifest for packages containing datasets.
+
+A logical value, TRUE if a valid instance of the ready4 s3 class Manifest for packages containing datasets.
 }
 \description{
 Create a new valid instance of the ready4 s3 class Manifest for packages containing datasets.

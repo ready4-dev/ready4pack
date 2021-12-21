@@ -16,6 +16,7 @@ validate_ready4pack_manifest(make_new_ready4pack_manifest(x))
 #' @details ready4 s3 class Manifest for packages containing datasets.
 #' @rdname make_new_ready4pack_manifest
 #' @export 
+#' @keywords internal
 make_new_ready4pack_manifest <- function(x){ 
 stopifnot(is.list(x))
 class(x) <- append(c("ready4pack_manifest",setdiff(make_pt_ready4pack_manifest() %>% class(),class(x))),
@@ -23,14 +24,13 @@ class(x))
 x
 }
 #' make prototype ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
-#' @description Create a new prototype for the ready4 s3 class Manifest for packages containing datasets.
 #' @param x_ready4fun_manifest PARAM_DESCRIPTION, Default: ready4fun::ready4fun_manifest()
 #' @param constructor_r3 Constructor (a ready4 S3), Default: ready4class::ready4class_constructor()
 #' @param pkg_ds_ls_ls Package dataset (a list of lists), Default: list()
 #' @param clss_to_apply_ls Classes to apply (a list), Default: list()
 #' @return A prototype for ready4 s3 class Manifest for packages containing datasets.
-#' @details ready4 s3 class Manifest for packages containing datasets.
-#' @rdname make_pt_ready4pack_manifest
+#' 
+#' @rdname ready4pack_manifest
 #' @export 
 #' @importFrom ready4fun ready4fun_manifest
 #' @importFrom ready4class ready4class_constructor
@@ -59,6 +59,7 @@ rlang::exec(list,!!!args_ls)
 #' @importFrom tidyr gather
 #' @importFrom dplyr filter arrange pull
 #' @importFrom purrr map_chr map2_chr
+#' @keywords internal
 validate_ready4pack_manifest <- function(x){
 if(sum(stringr::str_detect(names(x)[names(x) %in% names(make_pt_ready4pack_manifest())],
 names(make_pt_ready4pack_manifest())))!=length(names(make_pt_ready4pack_manifest()))){
@@ -97,10 +98,9 @@ call. = FALSE)
 
 x}
 #' is ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
-#' @description Check whether an object is a valid instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x An object of any type
 #' @return A logical value, TRUE if a valid instance of the ready4 s3 class Manifest for packages containing datasets.
-#' @details ready4 s3 class Manifest for packages containing datasets.
-#' @rdname is_ready4pack_manifest
+#' 
+#' @rdname ready4pack_manifest
 #' @export 
 is_ready4pack_manifest <- function(x) inherits(validate_ready4pack_manifest(x), "ready4pack_manifest")
