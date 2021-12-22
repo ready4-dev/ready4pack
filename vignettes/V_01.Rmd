@@ -18,14 +18,20 @@ knitr::opts_chunk$set(echo = TRUE)
 library(ready4pack)
 ```
 
-`ready4pack` is a toolkit for implementing a highly standardised workflow to author R packages that extend the [ready4 framework](https://www.ready4-dev.com/) for open and modular mental health systems models.
+`ready4pack` is a toolkit for extending the [ready4 framework](https://www.ready4-dev.com/) for open and modular mental health systems models with R packages that are:
 
-`ready4pack` builds on two related toolkits for extending the ready4 framework:
+- *Citable* (with a Zenodo generated DOI and an algorithm generated CITATION file);
+- *Community-minded* (applying deprecation conventions supported by `lifecycle`); 
+- *Documented* (applying a function self-documenting algorithm that extends `sinew`, deploying a GitHub pages hosted and `pkgdown` generated website and authoring PDF manuals stored in a GitHub Release via `piggyback`);
+- *Internally consistent* implementing automated checks to ensure consistency in naming conventions, etc; 
+- *Licensed* (via a `usethis` generated GPL-3 license); 
+- *Quality assured* (using continuous integration via GitHub actions and R-CMD-Check); and
+- *Versioned* (applying `usethis` version increments).
 
-- [ready4fun tools for authoring R package functions](https://ready4-dev.github.io/ready4fun/articles/V_01.html); and 
-- [ready4class tools for authoring classes and methods](https://ready4-dev.github.io/ready4class/articles/V_01.html)
+`ready4pack` builds on both third party development workflow tools (such as `devtools`) and ready4 tools for authoring functions ([ready4fun](https://ready4-dev.github.io/ready4fun/articles/V_01.html)) and classes ([ready4class](https://ready4-dev.github.io/ready4class/articles/V_01.html)).
+`ready4pack` integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets. 
 
-`ready4pack` integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets. A combination of the `ready4_pack_manifest` class and `author` method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the [ready4 github repository](https://github.com/ready4-dev).
+A combination of the `ready4_pack_manifest` class and `author` method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the [ready4 github repository](https://github.com/ready4-dev).
 
 ## Workflow example one
 
