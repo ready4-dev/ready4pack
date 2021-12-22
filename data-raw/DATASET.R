@@ -1,7 +1,7 @@
 library(ready4class)
 ready4fun::write_fn_type_dirs()
-pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages That Extend The Ready4 Framework for Open and Modular Mental Health Systems Models" %>% tools::toTitleCase(),
-                                           pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open source, modular mental health systems models.
+pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages That Extend The Ready4 Framework" %>% tools::toTitleCase(),
+                                           pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open and modular mental health systems models.
   This development version of the ready4pack package has been made available as part of the process of testing and documenting the package.
   Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).",
                                            authors_prsn = c(utils::person(
@@ -15,7 +15,7 @@ pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages
                                            ),
                                            urls_chr = c("https://ready4-dev.github.io/ready4pack/",
                                                         "https://github.com/ready4-dev/ready4pack",
-                                                        "https://ready4-dev.github.io/ready4/"))
+                                                        "https://www.ready4-dev.com/"))
 x <- pkg_desc_ls %>%
   ready4fun::make_manifest(addl_pkgs_ls = ready4fun::make_addl_pkgs_ls(depends_chr = "ready4",suggests_chr = "rmarkdown"),
                            build_ignore_ls = ready4fun::make_build_ignore_ls(file_nms_chr = c("initial_setup.R")),

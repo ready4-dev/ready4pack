@@ -1,6 +1,6 @@
-# ready4pack <img src="man/figures/fav120.png" align="right" />
+# ready4pack
 
-## Author R Packages that Extend the Ready4 Framework for Open and Modular Mental Health Systems Models
+## Author R Packages that Extend the Ready4 Framework
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -10,7 +10,7 @@
 
 ready4pack provides a set of tools for authoring R packages
 of functions, classes, methods and datasets that extend the ready4
-framework for open source, modular mental health systems models.  This
+framework for open and modular mental health systems models.  This
 development version of the ready4pack package has been made available
 as part of the process of testing and documenting the package.
 Therefore you should only trial this software if you feel confident
