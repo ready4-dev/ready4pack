@@ -85,14 +85,25 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ready4-dev.github.io/ready4pack/">ready4pack</a></span><span class="op">)</span></code></pre></div>
-<p><code>ready4pack</code> is a toolkit for implementing a highly standardised workflow to author R packages that extend the <a href="https://www.ready4-dev.com/" class="external-link">ready4 framework</a> for open and modular mental health systems models.</p>
-<p><code>ready4pack</code> builds on two related toolkits for extending the ready4 framework:</p>
+<p><code>ready4pack</code> is a toolkit for extending the <a href="https://www.ready4-dev.com/" class="external-link">ready4 framework</a> for open and modular mental health systems models with R packages that are:</p>
 <ul>
 <li>
-<a href="https://ready4-dev.github.io/ready4fun/articles/V_01.html" class="external-link">ready4fun tools for authoring R package functions</a>; and</li>
-<li><a href="https://ready4-dev.github.io/ready4class/articles/V_01.html" class="external-link">ready4class tools for authoring classes and methods</a></li>
+<em>Citable</em> (with a Zenodo generated DOI and an algorithm generated CITATION file);</li>
+<li>
+<em>Community-minded</em> (applying deprecation conventions supported by <code>lifecycle</code>);</li>
+<li>
+<em>Documented</em> (applying a function self-documenting algorithm that extends <code>sinew</code>, deploying a GitHub pages hosted and <code>pkgdown</code> generated website and authoring PDF manuals stored in a GitHub Release via <code>piggyback</code>);</li>
+<li>
+<em>Internally consistent</em> implementing automated checks to ensure consistency in naming conventions, etc;</li>
+<li>
+<em>Licensed</em> (via a <code>usethis</code> generated GPL-3 license);</li>
+<li>
+<em>Quality assured</em> (using continuous integration via GitHub actions and R-CMD-Check); and</li>
+<li>
+<em>Versioned</em> (applying <code>usethis</code> version increments).</li>
 </ul>
-<p><code>ready4pack</code> integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets. A combination of the <code>ready4_pack_manifest</code> class and <code>author</code> method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the <a href="https://github.com/ready4-dev" class="external-link">ready4 github repository</a>.</p>
+<p><code>ready4pack</code> builds on both third party development workflow tools (such as <code>devtools</code>) and ready4 tools for authoring functions (<a href="https://ready4-dev.github.io/ready4fun/articles/V_01.html" class="external-link">ready4fun</a>) and classes (<a href="https://ready4-dev.github.io/ready4class/articles/V_01.html" class="external-link">ready4class</a>). <code>ready4pack</code> integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets.</p>
+<p>A combination of the <code>ready4_pack_manifest</code> class and <code>author</code> method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the <a href="https://github.com/ready4-dev" class="external-link">ready4 github repository</a>.</p>
 <div class="section level2">
 <h2 id="workflow-example-one">Workflow example one<a class="anchor" aria-label="anchor" href="#workflow-example-one"></a>
 </h2>
