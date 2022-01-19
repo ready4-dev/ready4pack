@@ -3,7 +3,7 @@
 \name{metamorphose.ready4pack_manifest}
 \alias{metamorphose.ready4pack_manifest}
 \alias{metamorphose,ready4pack_manifest-method}
-\title{Metamorphose an object}
+\title{Metamorphose from one ready4 framework module (or sub-module) class to another}
 \usage{
 metamorphose.ready4pack_manifest(x)
 

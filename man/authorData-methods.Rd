@@ -3,7 +3,7 @@
 \name{authorData.ready4pack_manifest}
 \alias{authorData.ready4pack_manifest}
 \alias{authorData,ready4pack_manifest-method}
-\title{Author and document package datasets}
+\title{Author and document datasets}
 \usage{
 authorData.ready4pack_manifest(x)
 

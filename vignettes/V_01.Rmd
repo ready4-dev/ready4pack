@@ -33,7 +33,32 @@ library(ready4pack)
 
 A combination of the `ready4_pack_manifest` class and `author` method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the [ready4 github repository](https://github.com/ready4-dev).
 
-## Workflow example one
+## Workflow
+
+### Manifest
+
+The main class exported as part of `ready4pack` is `readypack_manifest` list based [ready4 Framework sub-module](https://ready4-dev.github.io/ready4/articles/V_01.html), that extends the [`ready4fun_manifest`](https://ready4-dev.github.io/ready4fun/articles/V_01.html) and [`ready4class_manifest`](https://ready4-dev.github.io/ready4class/articles/V_01.html) sub-modules.
+
+### Typical usage
+
+ `readypack_manifest` sub-module is most efficiently created with the aid of the `make_pt_ready4pack_manifest` function and combines instances of the `ready4fun_manifest` and [`ready4class_constructor`](https://ready4-dev.github.io/ready4class/articles/V_01.html) sub-modules.
+
+```{r warning=FALSE}
+x <- make_pt_ready4pack_manifest(ready4fun::ready4fun_manifest(),
+                                 constructor_r3 = ready4class::ready4class_constructor()) %>%
+  ready4pack_manifest()
+```
+
+The main method defined for `readypack_manifest` is `author` which extends the `author` method for `ready4class_manifest` to author a consistently documented R package.
+
+```{r eval = F}
+## Not run
+author(x)
+```
+
+### Examples
+
+#### Workflow example one
 
 [The program to author and document the ready4show package](https://github.com/ready4-dev/ready4show/blob/main/data-raw/DATASET.R) is relatively simple and authors:
 
@@ -49,7 +74,7 @@ A combination of the `ready4_pack_manifest` class and `author` method are used t
 
 - an [R-CMD-check continuous integration](https://github.com/ready4-dev/ready4show/actions/workflows/R-CMD-check.yaml) algorithm to be implemented each time a new version of `ready4show` is pushed to the `main` branch of the GitHub source code repository.
 
-## Workflow example two
+#### Workflow example two
 
 [The program to author and document the youthvars package](https://github.com/ready4-dev/youthvars/blob/main/data-raw/DATASET.R) is a bit more complex as it includes syntax to create package datasets. In addition to the package datasets, the algorithm creates content corresponding to the previous example, specifically:
 
