@@ -33,14 +33,14 @@
     
     <a class="navbar-brand me-2" href="../index.html">ready4pack</a>
 
-    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9027</small>
+    <small class="nav-text text-danger me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Unreleased version">0.0.0.9028</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div id="navbar" class="collapse navbar-collapse ms-2">
+    <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
   <a class="nav-link" href="../articles/ready4pack.html">Get started</a>
@@ -72,6 +72,9 @@
     
   </div>
 </nav><div class="container template-article">
+
+
+
 <script src="V_01_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <main id="main"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Author R Packages That Extend The Ready4 Framework</h1>
@@ -105,8 +108,32 @@
 <p><code>ready4pack</code> builds on both third party development workflow tools (such as <code>devtools</code>) and ready4 tools for authoring functions (<a href="https://ready4-dev.github.io/ready4fun/articles/V_01.html" class="external-link">ready4fun</a>) and classes (<a href="https://ready4-dev.github.io/ready4class/articles/V_01.html" class="external-link">ready4class</a>). <code>ready4pack</code> integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets.</p>
 <p>A combination of the <code>ready4_pack_manifest</code> class and <code>author</code> method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 framework R packages available in the <a href="https://github.com/ready4-dev" class="external-link">ready4 github repository</a>.</p>
 <div class="section level2">
-<h2 id="workflow-example-one">Workflow example one<a class="anchor" aria-label="anchor" href="#workflow-example-one"></a>
+<h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
 </h2>
+<div class="section level3">
+<h3 id="manifest">Manifest<a class="anchor" aria-label="anchor" href="#manifest"></a>
+</h3>
+<p>The main class exported as part of <code>ready4pack</code> is <code>readypack_manifest</code> list based <a href="https://ready4-dev.github.io/ready4/articles/V_01.html" class="external-link">ready4 Framework sub-module</a>, that extends the <a href="https://ready4-dev.github.io/ready4fun/articles/V_01.html" class="external-link"><code>ready4fun_manifest</code></a> and <a href="https://ready4-dev.github.io/ready4class/articles/V_01.html" class="external-link"><code>ready4class_manifest</code></a> sub-modules.</p>
+</div>
+<div class="section level3">
+<h3 id="typical-usage">Typical usage<a class="anchor" aria-label="anchor" href="#typical-usage"></a>
+</h3>
+<p><code>readypack_manifest</code> sub-module is most efficiently created with the aid of the <code>make_pt_ready4pack_manifest</code> function and combines instances of the <code>ready4fun_manifest</code> and <a href="https://ready4-dev.github.io/ready4class/articles/V_01.html" class="external-link"><code>ready4class_constructor</code></a> sub-modules.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/ready4pack_manifest.html">make_pt_ready4pack_manifest</a></span><span class="op">(</span><span class="fu">ready4fun</span><span class="fu">::</span><span class="fu"><a href="https://ready4-dev.github.io/ready4fun/reference/ready4fun_manifest.html" class="external-link">ready4fun_manifest</a></span><span class="op">(</span><span class="op">)</span>,
+                                 constructor_r3 <span class="op">=</span> <span class="fu">ready4class</span><span class="fu">::</span><span class="fu"><a href="https://ready4-dev.github.io/ready4class/reference/ready4class_constructor.html" class="external-link">ready4class_constructor</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
+  <span class="fu"><a href="../reference/ready4pack_manifest.html">ready4pack_manifest</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>The main method defined for <code>readypack_manifest</code> is <code>author</code> which extends the <code>author</code> method for <code>ready4class_manifest</code> to author a consistently documented R package.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co">## Not run</span>
+<span class="fu"><a href="https://ready4-dev.github.io/ready4/reference/author-methods.html" class="external-link">author</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
+</h3>
+<div class="section level4">
+<h4 id="workflow-example-one">Workflow example one<a class="anchor" aria-label="anchor" href="#workflow-example-one"></a>
+</h4>
 <p><a href="https://github.com/ready4-dev/ready4show/blob/main/data-raw/DATASET.R" class="external-link">The program to author and document the ready4show package</a> is relatively simple and authors:</p>
 <ul>
 <li><p>the <code>ready4show</code> package <a href="https://github.com/ready4-dev/ready4show/blob/main/inst/CITATION" class="external-link">CITATION</a>, <a href="https://github.com/ready4-dev/ready4show/blob/main/DESCRIPTION" class="external-link">DESCRIPTION</a>, <a href="https://github.com/ready4-dev/ready4show/blob/main/LICENSE" class="external-link">LICENSE</a> and <a href="https://github.com/ready4-dev/ready4show/blob/main/README.md" class="external-link">README</a> files;</p></li>
@@ -117,9 +144,9 @@
 <li><p>an <a href="https://github.com/ready4-dev/ready4show/actions/workflows/R-CMD-check.yaml" class="external-link">R-CMD-check continuous integration</a> algorithm to be implemented each time a new version of <code>ready4show</code> is pushed to the <code>main</code> branch of the GitHub source code repository.</p></li>
 </ul>
 </div>
-<div class="section level2">
-<h2 id="workflow-example-two">Workflow example two<a class="anchor" aria-label="anchor" href="#workflow-example-two"></a>
-</h2>
+<div class="section level4">
+<h4 id="workflow-example-two">Workflow example two<a class="anchor" aria-label="anchor" href="#workflow-example-two"></a>
+</h4>
 <p><a href="https://github.com/ready4-dev/youthvars/blob/main/data-raw/DATASET.R" class="external-link">The program to author and document the youthvars package</a> is a bit more complex as it includes syntax to create package datasets. In addition to the package datasets, the algorithm creates content corresponding to the previous example, specifically:</p>
 <ul>
 <li><p>the <code>youthvars</code> package <a href="https://github.com/ready4-dev/youthvars/blob/main/inst/CITATION" class="external-link">CITATION</a>, <a href="https://github.com/ready4-dev/youthvars/blob/main/DESCRIPTION" class="external-link">DESCRIPTION</a>, <a href="https://github.com/ready4-dev/youthvars/blob/main/LICENSE" class="external-link">LICENSE</a> and <a href="https://github.com/ready4-dev/youthvars/blob/main/README.md" class="external-link">README</a> files;</p></li>
@@ -129,6 +156,8 @@
 <li><p>an <a href="https://github.com/ready4-dev/youthvars/releases/tag/Documentation_0.0" class="external-link">initial <code>youthvars</code> release</a> for hosting supporting files, the creation of which will trigger archiving on <a href="https://zenodo.org/record/5646551" class="external-link">Zenodo with a <code>youthvars</code> package DOI</a>; and</p></li>
 <li><p>an <a href="https://github.com/ready4-dev/youthvars/actions/workflows/R-CMD-check.yaml" class="external-link">R-CMD-check continuous integration</a> algorithm to be implemented each time a new version of <code>youthvars</code> is pushed to the <code>main</code> branch of the GitHub source code repository.</p></li>
 </ul>
+</div>
+</div>
 </div>
 <div class="section level2">
 <h2 id="future-documentation">Future documentation<a class="anchor" aria-label="anchor" href="#future-documentation"></a>
@@ -148,7 +177,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
 </div>
 
     </footer>
