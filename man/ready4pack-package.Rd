@@ -6,11 +6,11 @@
 \alias{ready4pack-package}
 \title{ready4pack: Author R Packages that Extend the Ready4 Framework}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open and modular mental health systems models. This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
 
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open and modular mental health systems models. This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
 }
@@ -32,16 +32,6 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Matthew Hamilton \email{matthew.hamilton@orygen.org.au} (\href{https://orcid.org/0000-0001-7407-9194}{ORCID})
-
-Other contributors:
-\itemize{
-  \item Orygen [copyright holder, funder]
-  \item VicHealth [funder]
-  \item Victoria University [funder]
-}
-
-
 \strong{Maintainer}: Matthew Hamilton \email{matthew.hamilton@orygen.org.au} (\href{https://orcid.org/0000-0001-7407-9194}{ORCID})
 
 Other contributors:

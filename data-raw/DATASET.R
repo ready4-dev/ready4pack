@@ -1,3 +1,4 @@
+library(ready4fun)
 library(ready4class)
 ready4fun::write_fn_type_dirs()
 pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages That Extend The Ready4 Framework" %>% tools::toTitleCase(),
@@ -42,4 +43,5 @@ y <- ready4class::make_pt_ready4class_constructor(make_s3_lgl = T,
 z <- ready4class::ready4class_manifest(ready4class::make_pt_ready4class_manifest(x, # Convert to metamorphose method on constructor class
                                                                                  constructor_r3 = y)) # then add methods to ready4class_manifest class
 x <- author(z)
+#ready4fun::write_fns_dmt_tb(z$x_ready4fun_manifest) # fns_dmt_tb is NULL
 devtools::build_vignettes()
