@@ -1,8 +1,8 @@
 library(ready4fun)
 library(ready4class)
 ready4fun::write_fn_type_dirs()
-pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages That Extend The Ready4 Framework" %>% tools::toTitleCase(),
-                                           pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of functions, classes, methods and datasets that extend the ready4 framework for open and modular mental health systems models.
+pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages Of Ready4 Model Modules" %>% tools::toTitleCase(),
+                                           pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of modules for the ready4 youth mental health systems model (https://www.ready4-dev.com/).
   This development version of the ready4pack package has been made available as part of the process of testing and documenting the package.
   Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).",
                                            authors_prsn = c(utils::person(
@@ -11,6 +11,7 @@ pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages
                                                                                          "cre"),comment = c(ORCID = "0000-0001-7407-9194")
                                            ),
                                            utils::person("Orygen", role = c("cph", "fnd")),
+                                           utils::person("Australian Government Research Training Program", role =c("fnd")),
                                            utils::person("VicHealth",role = c("fnd")),
                                            utils::person("Victoria University", role =c("fnd"))
                                            ),
@@ -43,5 +44,5 @@ y <- ready4class::make_pt_ready4class_constructor(make_s3_lgl = T,
 z <- ready4class::ready4class_manifest(ready4class::make_pt_ready4class_manifest(x, # Convert to metamorphose method on constructor class
                                                                                  constructor_r3 = y)) # then add methods to ready4class_manifest class
 x <- author(z)
-#ready4fun::write_fns_dmt_tb(z$x_ready4fun_manifest) # fns_dmt_tb is NULL
+ready4::write_extra_pkgs_to_actions()
 devtools::build_vignettes()

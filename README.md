@@ -1,6 +1,6 @@
 # ready4pack
 
-## Author R Packages that Extend the Ready4 Framework
+## Author R Packages of Ready4 Model Modules
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
@@ -10,14 +10,14 @@
 <!-- badges: end -->
 
 ready4pack provides a set of tools for authoring R packages
-of functions, classes, methods and datasets that extend the ready4
-framework for open and modular mental health systems models.  This
-development version of the ready4pack package has been made available
-as part of the process of testing and documenting the package.
-Therefore you should only trial this software if you feel confident
-that you understand what it does and have created a sandpit area in
-which you can safely undertake testing. If you have any questions,
-please contact the authors (matthew.hamilton@orygen.org.au).
+of modules for the ready4 youth mental health systems model
+(https://www.ready4-dev.com/).  This development version of the
+ready4pack package has been made available as part of the process of
+testing and documenting the package.  Therefore you should only trial
+this software if you feel confident that you understand what it does
+and have created a sandpit area in which you can safely undertake
+testing. If you have any questions, please contact the authors
+(matthew.hamilton@orygen.org.au).
 
 To install a development version of this software, run the following commands in your R console:
 
