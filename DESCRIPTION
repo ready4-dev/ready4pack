@@ -1,28 +1,29 @@
 Package: ready4pack
-Title: Author R Packages that Extend the Ready4 Framework
-Version: 0.0.0.9029
+Title: Author R Packages of Ready4 Model Modules
+Version: 0.0.0.9030
 Authors@R: c(
     person("Matthew", "Hamilton", , "matthew.hamilton@orygen.org.au", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7407-9194")),
     person("Orygen", role = c("cph", "fnd")),
+    person("Australian Government Research Training Program", role = "fnd"),
     person("VicHealth", role = "fnd"),
     person("Victoria University", role = "fnd")
   )
 Description: ready4pack provides a set of tools for authoring R packages
-    of functions, classes, methods and datasets that extend the ready4
-    framework for open and modular mental health systems models.  This
-    development version of the ready4pack package has been made available
-    as part of the process of testing and documenting the package.
-    Therefore you should only trial this software if you feel confident
-    that you understand what it does and have created a sandpit area in
-    which you can safely undertake testing. If you have any questions,
-    please contact the authors (matthew.hamilton@orygen.org.au).
+    of modules for the ready4 youth mental health systems model
+    (https://www.ready4-dev.com/).  This development version of the
+    ready4pack package has been made available as part of the process of
+    testing and documenting the package.  Therefore you should only trial
+    this software if you feel confident that you understand what it does
+    and have created a sandpit area in which you can safely undertake
+    testing. If you have any questions, please contact the authors
+    (matthew.hamilton@orygen.org.au).
 License: GPL-3 + file LICENSE
 URL: https://ready4-dev.github.io/ready4pack/,
     https://github.com/ready4-dev/ready4pack, https://www.ready4-dev.com/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Imports: 
     dataverse,
     dplyr,
@@ -31,8 +32,8 @@ Imports:
     magrittr,
     methods,
     purrr,
-    ready4class (>= 0.0.0.9291),
-    ready4fun (>= 0.0.0.9515),
+    ready4class (>= 0.0.0.9293),
+    ready4fun (>= 0.0.0.9521),
     rlang,
     stringr,
     testthat,
