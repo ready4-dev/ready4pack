@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ```{r results='hide', message=FALSE}
 library(ready4)
+library(ready4fun)
+library(ready4class)
 library(ready4pack)
 ```
 
