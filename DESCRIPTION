@@ -1,8 +1,8 @@
 Package: ready4pack
-Title: Author R Packages of Ready4 Model Modules
-Version: 0.0.0.9030
+Title: Author R Packages of Health Economic Model Modules
+Version: 0.0.0.9031
 Authors@R: c(
-    person("Matthew", "Hamilton", , "matthew.hamilton@orygen.org.au", role = c("aut", "cre"),
+    person("Matthew", "Hamilton", , "matthew.hamilton1@monash.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-7407-9194")),
     person("Orygen", role = c("cph", "fnd")),
     person("Australian Government Research Training Program", role = "fnd"),
@@ -10,14 +10,14 @@ Authors@R: c(
     person("Victoria University", role = "fnd")
   )
 Description: ready4pack provides a set of tools for authoring R packages
-    of modules for the ready4 youth mental health systems model
+    of model modules developed with the ready4 framework
     (https://www.ready4-dev.com/).  This development version of the
     ready4pack package has been made available as part of the process of
     testing and documenting the package.  Therefore you should only trial
     this software if you feel confident that you understand what it does
     and have created a sandpit area in which you can safely undertake
     testing. If you have any questions, please contact the authors
-    (matthew.hamilton@orygen.org.au).
+    (matthew.hamilton1@monash.edu).
 License: GPL-3 + file LICENSE
 URL: https://ready4-dev.github.io/ready4pack/,
     https://github.com/ready4-dev/ready4pack, https://www.ready4-dev.com/
@@ -32,8 +32,9 @@ Imports:
     magrittr,
     methods,
     purrr,
-    ready4class (>= 0.0.0.9293),
-    ready4fun (>= 0.0.0.9521),
+    ready4 (>= 0.0.0.9125),
+    ready4class (>= 0.0.0.9296),
+    ready4fun (>= 0.0.0.9528),
     rlang,
     stringr,
     testthat,
@@ -41,8 +42,6 @@ Imports:
     tidyr,
     utils
 VignetteBuilder: knitr
-Depends: 
-    ready4
 Suggests: 
     rmarkdown
 Remotes: 
