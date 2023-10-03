@@ -4,15 +4,15 @@
 \name{ready4pack-package}
 \alias{ready4pack}
 \alias{ready4pack-package}
-\title{ready4pack: Author R Packages of Ready4 Model Modules}
+\title{ready4pack: Author R Packages of Health Economic Model Modules}
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-ready4pack provides a set of tools for authoring R packages of modules for the ready4 youth mental health systems model (https://www.ready4-dev.com/). This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
+ready4pack provides a set of tools for authoring R packages of model modules developed with the ready4 framework (https://www.ready4-dev.com/). This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton1@monash.edu).
 
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-ready4pack provides a set of tools for authoring R packages of modules for the ready4 youth mental health systems model (https://www.ready4-dev.com/). This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).
+ready4pack provides a set of tools for authoring R packages of model modules developed with the ready4 framework (https://www.ready4-dev.com/). This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton1@monash.edu).
 }
 \seealso{
 Useful links:
@@ -32,7 +32,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Matthew Hamilton \email{matthew.hamilton@orygen.org.au} (\href{https://orcid.org/0000-0001-7407-9194}{ORCID})
+\strong{Maintainer}: Matthew Hamilton \email{matthew.hamilton1@monash.edu} (\href{https://orcid.org/0000-0001-7407-9194}{ORCID})
 
 Other contributors:
 \itemize{

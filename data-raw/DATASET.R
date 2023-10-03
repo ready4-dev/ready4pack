@@ -1,13 +1,14 @@
+library(ready4)
 library(ready4fun)
 library(ready4class)
 ready4fun::write_fn_type_dirs()
-pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages Of Ready4 Model Modules" %>% tools::toTitleCase(),
-                                           pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of modules for the ready4 youth mental health systems model (https://www.ready4-dev.com/).
+pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages Of Health Economic Model Modules" %>% tools::toTitleCase(),
+                                           pkg_desc_1L_chr = "ready4pack provides a set of tools for authoring R packages of model modules developed with the ready4 framework (https://www.ready4-dev.com/).
   This development version of the ready4pack package has been made available as part of the process of testing and documenting the package.
-  Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton@orygen.org.au).",
+  Therefore you should only trial this software if you feel confident that you understand what it does and have created a sandpit area in which you can safely undertake testing. If you have any questions, please contact the authors (matthew.hamilton1@monash.edu).",
                                            authors_prsn = c(utils::person(
                                              given = "Matthew",family = "Hamilton", email =
-                                               "matthew.hamilton@orygen.org.au",role = c("aut",
+                                               "matthew.hamilton1@monash.edu",role = c("aut",
                                                                                          "cre"),comment = c(ORCID = "0000-0001-7407-9194")
                                            ),
                                            utils::person("Orygen", role = c("cph", "fnd")),
@@ -19,7 +20,8 @@ pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages
                                                         "https://github.com/ready4-dev/ready4pack",
                                                         "https://www.ready4-dev.com/"))
 x <- pkg_desc_ls %>%
-  ready4fun::make_manifest(addl_pkgs_ls = ready4fun::make_addl_pkgs_ls(depends_chr = "ready4",suggests_chr = "rmarkdown"),
+  ready4fun::make_manifest(addl_pkgs_ls = ready4fun::make_addl_pkgs_ls(#depends_chr = "ready4",
+                                                                       suggests_chr = "rmarkdown"),
                            build_ignore_ls = ready4fun::make_build_ignore_ls(file_nms_chr = c("initial_setup.R")),
                            check_type_1L_chr = "ready4",
                            custom_dmt_ls = ready4fun::make_custom_dmt_ls(),
@@ -45,4 +47,11 @@ z <- ready4class::ready4class_manifest(ready4class::make_pt_ready4class_manifest
                                                                                  constructor_r3 = y)) # then add methods to ready4class_manifest class
 x <- author(z)
 ready4::write_extra_pkgs_to_actions()
+write_to_edit_workflow("pkgdown.yaml") # In other packages, run for "test-coverage.yaml" as well.
+readLines("_pkgdown.yml") %>%
+  stringr::str_replace_all("  - text: Model", "  - text: Framework & Model") %>%
+  writeLines(con = "_pkgdown.yml")
+readme_chr <- readLines("README.md")
+readme_chr[-which(readme_chr %>% purrr::map_lgl(~startsWith(.x, "[![test-coverage]")))] %>%
+  writeLines(con = "README.md")
 devtools::build_vignettes()

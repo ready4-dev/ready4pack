@@ -1,5 +1,5 @@
 ---
-title: "Author R Packages Of Ready4 Model Modules"
+title: "Author R Packages Of Health Economic Model Modules"
 output: 
   rmarkdown::html_vignette:
     toc: true
@@ -7,7 +7,7 @@ output:
     highlight: null
     number_sections: yes
 vignette: >
-  %\VignetteIndexEntry{Author R Packages Of Ready4 Model Modules}
+  %\VignetteIndexEntry{Author R Packages Of Health Economic Model Modules}
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{knitr::rmarkdown}
 ---
@@ -15,10 +15,11 @@ vignette: >
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ```{r results='hide', message=FALSE}
+library(ready4)
 library(ready4pack)
 ```
 
-`ready4pack` is a toolkit for authoring collections of modules for the [ready4 youth mental health systems model](https://www.ready4-dev.com/) and disseminating them as R packages that are:
+`ready4pack` is a toolkit for bundling collections of modules for computational health economic models authored with the [ready4 framework](https://www.ready4-dev.com/) as R packages that are:
 
 - *Citable* (with a Zenodo generated DOI and an algorithm generated CITATION file);
 - *Community-minded* (applying deprecation conventions supported by `lifecycle`); 
@@ -28,8 +29,8 @@ library(ready4pack)
 - *Quality assured* (using continuous integration via GitHub actions and R-CMD-Check); and
 - *Versioned* (applying `usethis` version increments).
 
-`ready4pack` builds on both third party development workflow tools (such as `devtools`) and ready4 tools for authoring functions ([ready4fun](https://ready4-dev.github.io/ready4fun/articles/V_01.html)) and classes ([ready4class](https://ready4-dev.github.io/ready4class/articles/V_01.html)).
-`ready4pack` integrates these tools in a common workflow, while adding tools for authoring and documenting R package datasets. 
+`ready4pack` extends ready4 framework tools for authoring module algorithms ([ready4fun](https://ready4-dev.github.io/ready4fun/articles/V_01.html)) and data structures ([ready4class](https://ready4-dev.github.io/ready4class/articles/V_01.html)) and wraps functions from a number of third party R development workflow tools (such as `devtools`).
+`ready4pack` integrates these tools in a common workflow, while adding tools for authoring and documenting datasets to be shipped with model module R packages. 
 
 A combination of the `ready4_pack_manifest` class and `author` method are used to implement this workflow. This workflow has been used to author all public versions of the ready4 R packages available in the [ready4 github repository](https://github.com/ready4-dev).
 

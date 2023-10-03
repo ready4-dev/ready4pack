@@ -17,11 +17,11 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(ready4pack)
 ```
-The tools in ready4pack are designed to make it easier to consistently author R packages that are collections of modules for [ready4 - an open source health economic model of the systems shaping mental health and wellbeing in young people](https://www.ready4-dev.com).
+The tools in ready4pack are designed to make it easier to consistently author R packages that are collections of modules for models developed with the [ready4 framework](https://www.ready4-dev.com).
 
 This development version of the ready4pack package has been made available as part of the process of testing and documenting the package. 
 
 A brief overview of the intended use of `ready4pack` classes and methods is available at:
 
 
-- [Author R Packages Of Ready4 Model Modules](V_01.html)
+- [Author R Packages Of Health Economic Model Modules](V_01.html)
