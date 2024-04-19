@@ -1,8 +1,8 @@
 Package: ready4pack
 Title: Author R Packages of Health Economic Model Modules
-Version: 0.0.0.9033
+Version: 0.0.0.9034
 Authors@R: c(
-    person("Matthew", "Hamilton", , "matthew.hamilton1@monash.edu", role = c("aut", "cre"),
+    person("Matthew", "Hamilton", , "matthew.hamilton1@monash.edu", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0001-7407-9194")),
     person("Orygen", role = c("cph", "fnd")),
     person("Australian Government Research Training Program", role = "fnd"),
@@ -23,28 +23,27 @@ URL: https://ready4-dev.github.io/ready4pack/,
     https://github.com/ready4-dev/ready4pack, https://www.ready4-dev.com/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
 Imports: 
     dataverse,
     dplyr,
-    knitr,
     lifecycle,
     magrittr,
     methods,
     purrr,
-    ready4 (>= 0.0.0.9125),
-    ready4class (>= 0.0.0.9296),
-    ready4fun (>= 0.0.0.9528),
+    ready4,
+    ready4class (>= 0.0.0.9297),
+    ready4fun (>= 0.0.0.9539),
     rlang,
     stringr,
-    testthat,
     tibble,
     tidyr,
     utils
-VignetteBuilder: knitr
-Suggests: 
-    rmarkdown
 Remotes: 
-    ready4-dev/ready4,
     ready4-dev/ready4class,
     ready4-dev/ready4fun
