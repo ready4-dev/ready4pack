@@ -2,7 +2,6 @@
 % Please edit documentation in R/pkg_ready4pack.R, R/ready4pack-package.R
 \docType{package}
 \name{ready4pack-package}
-\alias{ready4pack}
 \alias{ready4pack-package}
 \title{ready4pack: Author R Packages of Health Economic Model Modules}
 \description{
@@ -32,7 +31,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Matthew Hamilton \email{matthew.hamilton1@monash.edu} (\href{https://orcid.org/0000-0001-7407-9194}{ORCID})
+\strong{Maintainer}: Matthew Hamilton \email{matthew.hamilton1@monash.edu} (\href{https://orcid.org/0000-0001-7407-9194}{ORCID}) [copyright holder]
 
 Other contributors:
 \itemize{

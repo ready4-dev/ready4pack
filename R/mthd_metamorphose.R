@@ -1,7 +1,7 @@
-#' Metamorphose data from one model module (or sub-module) instance to an instance of a different model module or sub-module
-#' @description metamorphose.ready4pack_manifest() is a metamorphose method that metamorphoses an instance of a class into an instance of a different (non-child) class. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 S3).
-#' @param x An instance of ready4 s3 class Manifest for packages containing datasets.
-#' @return Manifest (a ready4 S3)
+#' Metamorphose a model module to a model module of a different (non-inheriting) class
+#' @description metamorphose.ready4pack_manifest() is a metamorphose method that metamorphoses an instance of a class into an instance of a different (non-child) class. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 submodule).
+#' @param x An instance of `ready4pack_manifest`, a ready4 s3 class Manifest for packages containing datasets.
+#' @return Manifest (a ready4 submodule)
 #' @rdname metamorphose-methods
 #' @export 
 #' @importFrom ready4class ready4class_constructor ready4class_manifest make_pt_ready4class_manifest

@@ -10,7 +10,10 @@ authorData.ready4pack_manifest(x)
 \S4method{authorData}{ready4pack_manifest}(x)
 }
 \arguments{
-\item{x}{An instance of ready4 s3 class Manifest for packages containing datasets.}
+\item{x}{An instance of \code{ready4pack_manifest}, a ready4 s3 class Manifest for packages containing datasets.}
+}
+\value{
+No return value, called for side effects.
 }
 \description{
 authorData.ready4pack_manifest() is an authorData method that authors and saves files necessary for creating and documenting datasets. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function is called for its side effects and does not return a value.

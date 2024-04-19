@@ -3,7 +3,7 @@
 #' @description Create a new valid instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x A prototype for the ready4 s3 class Manifest for packages containing datasets., Default: make_pt_ready4pack_manifest()
 #' @return A validated instance of the ready4 s3 class Manifest for packages containing datasets.
-#' @details ready4 s3 class Manifest for packages containing datasets.
+#' @details ready4 submodule manifest for packages containing datasets.
 #' @rdname ready4pack_manifest
 #' @export 
 ready4pack_manifest <- function(x = make_pt_ready4pack_manifest()){ 
@@ -13,7 +13,7 @@ validate_ready4pack_manifest(make_new_ready4pack_manifest(x))
 #' @description Create a new unvalidated instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x A prototype for the ready4 s3 class Manifest for packages containing datasets.
 #' @return An unvalidated instance of the ready4 s3 class Manifest for packages containing datasets.
-#' @details ready4 s3 class Manifest for packages containing datasets.
+#' @details ready4 submodule manifest for packages containing datasets.
 #' @rdname make_new_ready4pack_manifest
 #' @export 
 #' @keywords internal
@@ -25,7 +25,7 @@ x
 }
 #' make prototype ready4pack manifest ready4 s3 class Manifest for packages containing datasets.
 #' @param x_ready4fun_manifest PARAM_DESCRIPTION, Default: ready4fun::ready4fun_manifest()
-#' @param constructor_r3 Constructor (a ready4 S3), Default: ready4class::ready4class_constructor()
+#' @param constructor_r3 Constructor (a ready4 submodule), Default: ready4class::ready4class_constructor()
 #' @param pkg_ds_ls_ls Package dataset (a list of lists), Default: list()
 #' @param clss_to_apply_ls Classes to apply (a list), Default: list()
 #' @return A prototype for ready4 s3 class Manifest for packages containing datasets.
@@ -50,7 +50,7 @@ rlang::exec(list,!!!args_ls)
 #' @description Validate an instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @param x An unvalidated instance of the ready4 s3 class Manifest for packages containing datasets.
 #' @return A prototpe for ready4 s3 class Manifest for packages containing datasets.
-#' @details ready4 s3 class Manifest for packages containing datasets.
+#' @details ready4 submodule manifest for packages containing datasets.
 #' @rdname validate_ready4pack_manifest
 #' @export 
 #' @importFrom stringr str_detect str_c

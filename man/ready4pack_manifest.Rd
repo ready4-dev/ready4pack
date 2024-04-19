@@ -22,7 +22,7 @@ is_ready4pack_manifest(x)
 
 \item{x_ready4fun_manifest}{PARAM_DESCRIPTION, Default: ready4fun::ready4fun_manifest()}
 
-\item{constructor_r3}{Constructor (a ready4 S3), Default: ready4class::ready4class_constructor()}
+\item{constructor_r3}{Constructor (a ready4 submodule), Default: ready4class::ready4class_constructor()}
 
 \item{pkg_ds_ls_ls}{Package dataset (a list of lists), Default: list()}
 
@@ -39,5 +39,5 @@ A logical value, TRUE if a valid instance of the ready4 s3 class Manifest for pa
 Create a new valid instance of the ready4 s3 class Manifest for packages containing datasets.
 }
 \details{
-ready4 s3 class Manifest for packages containing datasets.
+ready4 submodule manifest for packages containing datasets.
 }

@@ -10,7 +10,7 @@ author.ready4pack_manifest(x)
 \S4method{author}{ready4pack_manifest}(x)
 }
 \arguments{
-\item{x}{An instance of ready4 s3 class Manifest for packages containing datasets.}
+\item{x}{An instance of \code{ready4pack_manifest}, a ready4 s3 class Manifest for packages containing datasets.}
 }
 \value{
 x (An object)

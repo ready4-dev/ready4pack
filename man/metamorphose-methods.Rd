@@ -3,18 +3,18 @@
 \name{metamorphose.ready4pack_manifest}
 \alias{metamorphose.ready4pack_manifest}
 \alias{metamorphose,ready4pack_manifest-method}
-\title{Metamorphose data from one model module (or sub-module) instance to an instance of a different model module or sub-module}
+\title{Metamorphose a model module to a model module of a different (non-inheriting) class}
 \usage{
 metamorphose.ready4pack_manifest(x)
 
 \S4method{metamorphose}{ready4pack_manifest}(x)
 }
 \arguments{
-\item{x}{An instance of ready4 s3 class Manifest for packages containing datasets.}
+\item{x}{An instance of \code{ready4pack_manifest}, a ready4 s3 class Manifest for packages containing datasets.}
 }
 \value{
-Manifest (a ready4 S3)
+Manifest (a ready4 submodule)
 }
 \description{
-metamorphose.ready4pack_manifest() is a metamorphose method that metamorphoses an instance of a class into an instance of a different (non-child) class. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 S3).
+metamorphose.ready4pack_manifest() is a metamorphose method that metamorphoses an instance of a class into an instance of a different (non-child) class. This method is implemented for the ready4 s3 class Manifest for packages containing datasets. The function returns Manifest (a ready4 submodule).
 }

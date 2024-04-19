@@ -9,7 +9,7 @@ pkg_desc_ls <- ready4fun::make_pkg_desc_ls(pkg_title_1L_chr = "Author R Packages
                                            authors_prsn = c(utils::person(
                                              given = "Matthew",family = "Hamilton", email =
                                                "matthew.hamilton1@monash.edu",role = c("aut",
-                                                                                         "cre"),comment = c(ORCID = "0000-0001-7407-9194")
+                                                                                         "cre", "cph"), comment = c(ORCID = "0000-0001-7407-9194")
                                            ),
                                            utils::person("Orygen", role = c("cph", "fnd")),
                                            utils::person("Australian Government Research Training Program", role =c("fnd")),
@@ -25,8 +25,9 @@ x <- pkg_desc_ls %>%
                            build_ignore_ls = ready4fun::make_build_ignore_ls(file_nms_chr = c("initial_setup.R")),
                            check_type_1L_chr = "ready4",
                            custom_dmt_ls = ready4fun::make_custom_dmt_ls(),
-                           copyright_holders_chr = "Orygen",
-                           dev_pkgs_chr = c("ready4","ready4fun","ready4class"),
+                           copyright_holders_chr = "Matthew Hamilton and Orygen",
+                           dev_pkgs_chr = c(#"ready4",
+                                            "ready4fun","ready4class"),
                            lifecycle_stage_1L_chr = "experimental",
                            path_to_pkg_logo_1L_chr = "../../../../../Documentation/Images/ready4pack-logo/default.png",
                            piggyback_to_1L_chr = "ready4-dev/ready4",
@@ -41,17 +42,20 @@ y <- ready4class::make_pt_ready4class_constructor(make_s3_lgl = T,
                                                                       constructor_r3 = "ready4class::ready4class_constructor()",
                                                                       pkg_ds_ls_ls = "list()",
                                                                       clss_to_apply_ls = "list()")),
-                                                  class_desc_chr = "ready4 s3 class Manifest for packages containing datasets.") %>%
+                                                  class_desc_chr = "ready4 submodule manifest for packages containing datasets.") %>%
   ready4class::ready4class_constructor()
 z <- ready4class::ready4class_manifest(ready4class::make_pt_ready4class_manifest(x, # Convert to metamorphose method on constructor class
                                                                                  constructor_r3 = y)) # then add methods to ready4class_manifest class
 x <- author(z)
-ready4::write_extra_pkgs_to_actions()
-write_to_edit_workflow("pkgdown.yaml") # In other packages, run for "test-coverage.yaml" as well.
-readLines("_pkgdown.yml") %>%
-  stringr::str_replace_all("  - text: Model", "  - text: Framework & Model") %>%
-  writeLines(con = "_pkgdown.yml")
+#ready4::write_extra_pkgs_to_actions(path_to_dir_1L_chr = ".github/workflows")
+write_to_edit_workflow("pkgdown.yaml", consent_1L_chr = "Y") # In other packages, run for "test-coverage.yaml" as well.
+# readLines("_pkgdown.yml") %>%
+#   stringr::str_replace_all("  - text: Model", "  - text: Framework & Model") %>%
+#   writeLines(con = "_pkgdown.yml")
 # readme_chr <- readLines("README.md")
 # readme_chr[-which(readme_chr %>% purrr::map_lgl(~startsWith(.x, "[![test-coverage]")))] %>%
 #   writeLines(con = "README.md")
-devtools::build_vignettes()
+write_to_tidy_pkg(manifest_ls, build_vignettes_1L_lgl = TRUE,
+                  clean_license_1L_lgl = TRUE, consent_1L_chr = "Y",
+                  examples_chr = character(0), project_1L_chr = "Framework", suggest_chr = "pkgload")
+# devtools::build_vignettes()
